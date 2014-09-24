@@ -98,6 +98,7 @@ public class StockWatcher implements EntryPoint {
 
 	public void message(){
 		System.out.println("That is a test for collaboration in a project");
+		System.out.println("Test");
 	}
   /**
    * Add stock to FlexTable. Executed when the user clicks the addStockButton or
