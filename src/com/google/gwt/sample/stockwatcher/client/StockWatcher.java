@@ -187,6 +187,7 @@ public class StockWatcher implements EntryPoint {
 	        + "%)");
 	  }
   
+  //solve conflit, keep master change
   private void message(){
 	  System.out.println("Description: That is a collaboration project");
   }
