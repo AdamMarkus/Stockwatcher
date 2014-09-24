@@ -96,9 +96,6 @@ public class StockWatcher implements EntryPoint {
     
   }
 
-	public void message(){
-		System.out.println("That is a test for collaboration in a project");
-	}
   /**
    * Add stock to FlexTable. Executed when the user clicks the addStockButton or
    * presses enter in the newSymbolTextBox.
@@ -189,6 +186,10 @@ public class StockWatcher implements EntryPoint {
 	    stocksFlexTable.setText(row, 2, changeText + " (" + changePercentText
 	        + "%)");
 	  }
+  
+  private void message(){
+	  System.out.println("Description: That is a collaboration project");
+  }
   
 	  }
   
