@@ -82,6 +82,7 @@ public class StockWatcher implements EntryPoint {
       }
     });
 
+	//test
 
     // Listen for keyboard events in the input box.
     newSymbolTextBox.addKeyDownHandler(new KeyDownHandler() {
