@@ -38,7 +38,12 @@ public class StockWatcher implements EntryPoint {
   private Label lastUpdatedLabel = new Label();
   private ArrayList<String> stocks = new ArrayList<String>();
   
-
+  
+  public void message(){
+	  System.out.println("That is a collaboration project");
+	  System.out.println("Text");
+  }
+  
   /**
    * Entry point method.
    */
@@ -48,7 +53,7 @@ public class StockWatcher implements EntryPoint {
     stocksFlexTable.setText(0, 1, "Price");
     stocksFlexTable.setText(0, 2, "Change");
     stocksFlexTable.setText(0, 3, "Remove");
-
+    
     // Assemble Add Stock panel.
     addPanel.add(newSymbolTextBox);
     addPanel.add(addStockButton);
@@ -63,8 +68,6 @@ public class StockWatcher implements EntryPoint {
 
     // Move cursor focus to the input box.
     newSymbolTextBox.setFocus(true);
-    
-    this.message();
     
     // Setup timer to refresh list automatically.
     Timer refreshTimer = new Timer() {
@@ -83,7 +86,7 @@ public class StockWatcher implements EntryPoint {
     });
 
 	//test
-
+    
     // Listen for keyboard events in the input box.
     newSymbolTextBox.addKeyDownHandler(new KeyDownHandler() {
       public void onKeyDown(KeyDownEvent event) {
@@ -187,10 +190,6 @@ public class StockWatcher implements EntryPoint {
 	        + "%)");
 	  }
   
-  //solve conflit, keep master change
-  private void message(){
-	  System.out.println("Description: That is a collaboration project");
-  }
   
 	  }
   
