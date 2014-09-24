@@ -64,6 +64,8 @@ public class StockWatcher implements EntryPoint {
     // Move cursor focus to the input box.
     newSymbolTextBox.setFocus(true);
     
+    this.message();
+    
     // Setup timer to refresh list automatically.
     Timer refreshTimer = new Timer() {
       @Override
@@ -93,6 +95,9 @@ public class StockWatcher implements EntryPoint {
     
   }
 
+	public void message(){
+		System.out.println("That is a test for collaboration in a project");
+	}
   /**
    * Add stock to FlexTable. Executed when the user clicks the addStockButton or
    * presses enter in the newSymbolTextBox.
