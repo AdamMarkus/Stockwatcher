@@ -30,7 +30,7 @@ import com.google.gwt.i18n.client.NumberFormat;
 public class StockWatcher implements EntryPoint {
 
 	//another change
-	 private static final int REFRESH_INTERVAL = 6000; // ms
+	 private static final int REFRESH_INTERVAL = 8000; // ms
   private VerticalPanel mainPanel = new VerticalPanel();
   private FlexTable stocksFlexTable = new FlexTable();
   private HorizontalPanel addPanel = new HorizontalPanel();
