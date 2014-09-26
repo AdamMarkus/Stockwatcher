@@ -29,7 +29,8 @@ import com.google.gwt.i18n.client.NumberFormat;
 
 public class StockWatcher implements EntryPoint {
 
-	 private static final int REFRESH_INTERVAL = 5000; // ms
+	//another change
+	 private static final int REFRESH_INTERVAL = 6000; // ms
   private VerticalPanel mainPanel = new VerticalPanel();
   private FlexTable stocksFlexTable = new FlexTable();
   private HorizontalPanel addPanel = new HorizontalPanel();
@@ -153,8 +154,13 @@ public class StockWatcher implements EntryPoint {
 	    for (int i = 0; i < stocks.size(); i++) {
 	      double price = Random.nextDouble() * MAX_PRICE;
 	      double change = price * MAX_PRICE_CHANGE
+<<<<<<< HEAD
 	    		  //change value - by Milena
 	          * (Random.nextDouble() * 1000.0 - 1.0);
+=======
+	    		  //change value 2 - by Milena
+	          * (Random.nextDouble() * 100.0 - 1.0);
+>>>>>>> ceb456a3ad056c365a60d1d70433e1f7a210381b
 
 	      prices[i] = new StockPrice(stocks.get(i), price, change);
 	    }
